@@ -1,0 +1,401 @@
+body {
+    background-color: hsl(185, 41%, 84%);
+}
+
+.logo svg {
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.main-container {
+    /* position: absolute; */
+    width: 375px;
+    height: 789px;
+    margin: auto;
+    margin-top: 41px;
+    background-color: white;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px;
+}
+
+.bill {
+    height: 101px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-left: 32px;
+    /* padding-left: 32px; */
+    padding-top: 32px;
+}
+
+.section-header {
+    width: 47px;
+    height: 24px;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E7A7D;
+
+}
+
+.input-bill,
+.input-people {
+    /* width: 311px; */
+    height: 48px;
+
+
+    background: #F3F9FA;
+    border-radius: 5px;
+    border: none;
+    text-align: right;
+    padding-right: 17.5px;
+    margin-right: 32px;
+
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    text-align: right;
+
+    color: #00474B;
+    background-image: url(images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: top 16.87px left 19.26px;
+}
+
+.input-bill::-webkit-outer-spin-button,
+.input-bill::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-bill[type=number] {
+    -moz-appearance: textfield;
+}
+
+.input-bill:hover {
+    cursor: pointer;
+    border: 2px solid #26C2AE;
+}
+
+.input-bill:focus {
+    border: 2px solid #26C2AE;
+    outline: none;
+}
+
+.tip-selection {
+    margin-left: 32px;
+}
+
+.select-tip {
+    width: 140px;
+    height: 24px;
+}
+
+.percentages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.percentage-button {
+    width: 147px;
+    height: 48px;
+    background: #00474B;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.percentage-button:hover {
+    cursor: pointer;
+    background: #9FE8DF;
+    color: #00474B;
+}
+
+.custom-button {
+    position: absolute;
+    margin-left: 163px;
+    margin-top: 128px;
+    background: #F3F9FA;
+    color: #547878;
+}
+
+.custom-button:hover {
+    cursor: pointer;
+    background: #F3F9FA;
+    border: 2px solid #26C2AE;
+    height: 44px;
+}
+
+.custom-button:focus {
+
+    background: #F3F9FA;
+    border: 2px solid #26C2AE;
+    outline: none;
+    height: 44px;
+}
+
+.people {
+    height: 101px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-left: 32px;
+    /* padding-left: 32px; */
+    padding-top: 32px;
+}
+
+.select-people {
+    width: 186px;
+    height: 24px;
+}
+
+#errorMsg {
+    position: absolute;
+    margin-left: 180px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    text-align: right;
+
+    color: #E17457;
+}
+
+.input-people {
+    background-image: url(images/icon-person.svg);
+    outline: none;
+}
+
+.input-people::-webkit-outer-spin-button,
+.input-people::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-people[type=number] {
+    -moz-appearance: textfield;
+}
+
+.input-people:hover {
+    cursor: pointer;
+    border: 2px solid #26C2AE;
+}
+
+.input-people:focus {
+
+    border: 2px solid #26C2AE;
+}
+
+
+
+.calculations {
+    width: 327px;
+    height: 257px;
+    margin: auto;
+    background: #00474B;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.calc-box {
+    width: 278px;
+    height: 48px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calc-box h1 {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.calc-box h1 span {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+
+    color: #7F9D9F;
+
+}
+
+.tips-container {
+    margin-top: 37px;
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+/* .reset-button {
+    width: 281px;
+    background: #26C2AE;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 24px;
+} */
+
+/* .reset-button h1 */
+
+#reset {
+    width: 281px;
+    height: 48px;
+    background: #26C2AE;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 24px;
+
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #00474B;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+#reset:hover {
+    cursor: pointer;
+    background: #9FE8DF;
+}
+
+#tip-result,
+#total-result {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    text-align: right;
+    letter-spacing: -0.666667px;
+
+    color: #26C2AE;
+
+}
+
+/* DESKTOP 1440PX ------------------------------------------------------- */
+
+@media screen and (min-width: 1440px) {
+
+    .main-container {
+        display: flex;
+        width: 920px;
+        height: 481px;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        padding-left: 48px;
+        padding-top: 45px;
+    }
+
+    .input-bill,
+    .input-people {
+        width: 367px;
+        height: 48px;
+    }
+
+    .bill {
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+    .tip-selection {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .percentages {
+        width: 400px;
+        gap: 17px;
+    }
+
+    .percentage-button {
+        width: 117px;
+        height: 48px;
+        justify-content: space-between;
+    }
+
+    .custom-button {
+        margin-left: 266px;
+        margin-top: 64px;
+    }
+
+    .people {
+
+        margin-left: 0;
+        padding-top: 32px;
+    }
+
+    .calculations {
+        position: absolute;
+        width: 413px;
+        height: 417px;
+        margin-left: 475px;
+        margin-top: 32px;
+    }
+
+    .tips-container {
+        margin-top: 40px;
+        height: 167px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .calc-box h1 {
+        line-height: 24px;
+    }
+
+    .reset-button {
+        margin-bottom: 40px;
+    }
+
+    #tip-result,
+    #total-result {
+
+        font-size: 48px;
+        line-height: 71px;
+
+        letter-spacing: -1px;
+        margin-top: -10px;
+    }
+}
