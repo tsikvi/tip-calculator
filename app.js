@@ -7,7 +7,13 @@ let percentage = 0;
 //იუზერის ჩაწერილ რიცხვი გადაყავს float-ში, 
 // რადგან დეფოლტად სტრინგად აღიქმება
 function getUserNumberInputFloat() {
-    return parseFloat(userInput.value).toFixed(2);
+    if (userInput.value < 10000) {
+        return parseFloat(userInput.value).toFixed(2);
+    }
+    else {
+        return 0;
+    }
+
 }
 
 //იუზერის ჩაწერილ რიცხვი გადაყავს int-ში, 
@@ -30,7 +36,8 @@ function validateInput(event) {
     } else {
         errorMsg.innerHTML = "";
         // continue with form submission or other actions
-        document.getElementById("input-person").style.border = "2px solid #26C2AE;";
+        document.getElementById("input-person").style.border = "2px solid #26C2AE";
+
     }
 }
 
@@ -42,7 +49,7 @@ function calc5Percent() {
     const enteredNumber = getUserNumberInputFloat();
     const enteredPerson = getUserNumberInputInt();
 
-    if (enteredNumber > 0 && enteredPerson > 0) {                  ///////////////////??????
+    if (enteredNumber > 0 && enteredPerson > 0) {
         currentTip = (enteredNumber * 5 / 100) / enteredPerson;
         currentTip = parseFloat(currentTip).toFixed(2);
 
