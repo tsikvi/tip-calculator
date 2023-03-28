@@ -387,6 +387,7 @@ body {
 
     .reset-button {
         margin-bottom: 40px;
+
     }
 
     #tip-result,
@@ -397,5 +398,20 @@ body {
 
         letter-spacing: -1px;
         margin-top: -10px;
+    }
+
+    #errorMsg {
+
+        margin-left: 255px;
+
+    }
+
+    .calc-box {
+        width: 333px;
+        height: 48px;
+    }
+
+    #reset {
+        width: 333px;
     }
 }
