@@ -7,12 +7,13 @@ let percentage = 0;
 //იუზერის ჩაწერილ რიცხვი გადაყავს float-ში, 
 // რადგან დეფოლტად სტრინგად აღიქმება
 function getUserNumberInputFloat() {
-    if (userInput.value < 10000) {
-        return parseFloat(userInput.value).toFixed(2);
-    }
-    else {
-        return 0;
-    }
+    // if (userInput.value < 10000) {
+    return parseFloat(userInput.value).toFixed(2);
+    // }
+    // else {
+    //     // document.getElementById("input-number").style.border = "2px solid #E17457";
+    //     return 0;
+    // }
 
 }
 
